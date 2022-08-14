@@ -1,7 +1,6 @@
-const { TwitterApi } = require("twitter-api-v2")
-require("dotenv").config()
+const { TwitterApi } = require('twitter-api-v2')
+require('dotenv').config()
 const { fetchJokes, makeJoke } = require('./jokes')
-
 
 const client = new TwitterApi({
   appKey: process.env.TWITTER_API_KEY,
@@ -12,10 +11,8 @@ const client = new TwitterApi({
 
 const rwClient = client.readWrite
 
-
 const tweet = async () => {
   const dadJoke = await makeJoke()
-  console.log(dadJoke)
   try {
     await rwClient.v2.tweet(dadJoke)
     console.log('tweet successfully created')
@@ -26,5 +23,5 @@ const tweet = async () => {
 
 module.exports = {
   tweet,
-  rwClient
+  rwClient,
 }

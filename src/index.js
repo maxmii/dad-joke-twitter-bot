@@ -1,4 +1,3 @@
-const { tweet } = require('./twitterClient')
-const runCronJob = require('./cronJob')
+const { runCronJob } = require('./cronJob')
 
-runCronJob('0 14 * * *')
+runCronJob('5/5 * * * *')
