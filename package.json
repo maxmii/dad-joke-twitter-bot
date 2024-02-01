@@ -1,0 +1,36 @@
+{
+  "name": "dad-joke-twitter-bot",
+  "version": "1.0.0",
+  "description": "Twitter bot that does Dad Jokes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxmii/dad-joke-twitter-bot.git"
+  },
+  "keywords": [
+    "Dad",
+    "Jokes",
+    "Funny"
+  ],
+  "author": "maxmii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxmii/dad-joke-twitter-bot/issues"
+  },
+  "homepage": "https://github.com/maxmii/dad-joke-twitter-bot#readme",
+  "dependencies": {
+    "cron": "^2.1.0",
+    "dotenv": "^16.0.1",
+    "node-fetch": "^2.6.6",
+    "pm2": "^5.2.0",
+    "twitter-api-v2": "^1.12.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
